@@ -5,7 +5,7 @@
   Dicas:
     - mantenha cada linha com no maximo ~36 colunas de largura (fica ao lado
       dos stats sem estourar o limite de ~88 colunas do README);
-    - NAO use a sequencia "-->" dentro da arte (fecharia este comentario);
+    - NAO use a sequencia "SETA" dentro da arte (fecharia este comentario);
     - o GitHub ignora este comentario, entao a arte nao aparece duplicada.
   O workflow le esta arte e atualiza SO os numeros no bloco visivel abaixo.
   =============================================================================
@@ -69,5 +69,3 @@ ART:END-->
        `':::_:' -- '' -'-' `':_::::'`
 ```
 <!--NEOFETCH:END-->
-
-<sub>Perfil estilo <code>neofetch</code> — stats atualizados automaticamente todo dia via GitHub Actions.</sub>

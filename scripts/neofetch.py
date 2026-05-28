@@ -31,7 +31,7 @@ ENABLED = [
     "location",
     "company",
     "email",
-    "hireable",
+    #"hireable",
     "followers",
     "following",
     "public_repos",
@@ -45,6 +45,18 @@ ENABLED = [
     "total_issues",
     "total_prs",
 ]
+
+# --- Sobrescrever campos (opcional) ---
+# Deixe comentado para usar o dado real do seu GitHub.
+# Descomente e preencha para exibir um valor customizado (ex.: uma bio diferente
+# da do seu perfil). Os campos numericos continuam atualizando sozinhos.
+OVERRIDES = {
+    "bio": "Construindo soluções reais e criando problemas novos no processo.\nLLM Worflows e sidequests corporativas.",
+    "location": "Sao Paulo, BR",
+    "company": "MEDTH",
+    "email": "glealleone@gmail.com",
+    # "languages": "Python, Rust, Go",
+}
 
 LABELS = {
     "username": "Username",
@@ -252,6 +264,8 @@ def main():
         data = demo()
     else:
         data = fetch()
+
+    data.update({k: v for k, v in OVERRIDES.items() if v})
 
     art_width = max((len(l) for l in art), default=0)
     wrap = max(TARGET_WIDTH - art_width - GAP, MIN_STATS)
