@@ -87,7 +87,10 @@ LABELS = {
     "total_prs": "Total PRs",
 }
 
-TARGET_WIDTH = 88  # largura usada para quebrar linhas longas de stats (ex.: bio)
+GAP = 3            # espacos entre arte e stats (modo lado a lado)
+MIN_STATS = 28     # largura minima legivel da coluna de stats (lado a lado)
+MAX_TOTAL = 92     # largura total no lado a lado; arte mais larga que isso empilha
+TARGET_WIDTH = 88  # largura p/ quebrar linhas longas de stats no modo empilhado
 
 GQL_USER = """
 query($login: String!) {
@@ -222,20 +225,41 @@ def stat_lines(data, wrap):
         if value in (None, ""):
             value = "None"
         prefix = f"{LABELS[key]}: "
-        text = f"{prefix}{value}"
-        if len(text) <= wrap:
-            lines.append(text)
-            continue
-        chunks = textwrap.wrap(str(value), width=max(wrap - len(prefix), 10)) or [str(value)]
+        indent = " " * len(prefix)
+        width = max(wrap - len(prefix), 10)
+        # Respeita quebras de linha propositais no valor (ex.: o \n da bio) e
+        # so quebra automaticamente os segmentos que passam da largura.
+        chunks = []
+        for segment in str(value).split("\n"):
+            chunks.extend(textwrap.wrap(segment, width=width) or [""])
         lines.append(prefix + chunks[0])
         for chunk in chunks[1:]:
-            lines.append(" " * len(prefix) + chunk)
+            lines.append(indent + chunk)
     return lines
 
 
-def compose(art_lines, stats):
-    """Empilha: arte em cima, uma linha em branco, e os stats embaixo."""
+def compose(art_lines, data):
+    """Lado a lado quando a arte e estreita o bastante; senao empilha (arte em
+    cima, stats embaixo). A largura da arte decide o modo automaticamente."""
     art = [line.rstrip() for line in art_lines]
+    art_width = max((len(l) for l in art), default=0)
+    stats_w = MAX_TOTAL - art_width - GAP
+    if art and stats_w >= MIN_STATS:
+        return _side_by_side(art, stat_lines(data, stats_w), art_width)
+    return _stacked(art, stat_lines(data, TARGET_WIDTH))
+
+
+def _side_by_side(art, stats, art_width):
+    rows = max(len(art), len(stats))
+    out = []
+    for i in range(rows):
+        left = art[i] if i < len(art) else ""
+        right = stats[i] if i < len(stats) else ""
+        out.append((left.ljust(art_width) + " " * GAP + right).rstrip())
+    return "\n".join(out)
+
+
+def _stacked(art, stats):
     body = (art + [""] + list(stats)) if art else list(stats)
     return "\n".join(line.rstrip() for line in body)
 
@@ -293,7 +317,7 @@ def main():
 
     data.update({k: v for k, v in OVERRIDES.items() if v})
 
-    block = compose(art, stat_lines(data, TARGET_WIDTH))
+    block = compose(art, data)
     updated = splice(readme, block)
 
     with open(README, "w", encoding="utf-8", newline="\n") as f:
