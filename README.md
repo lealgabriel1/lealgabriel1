@@ -44,27 +44,27 @@ ART:END-->
                 .88888888:.                  lealgabriel1@github
                88888888.88888.               -------------------
              .8888888888888888.              Username: lealgabriel1
-             888888888888888888              Bio: Estudante de ciencia da computacao
-             88' _`88'_  `88888                   apaixonado por Linux.
-             88 88 88 88  88888              Location: Brasil
-             88_88_::_88_:88888              Company: None
-             88:::,::,:::::8888              Email: None
-             88`:::::::::'`8888              Hireable: No
-            .88  `::::'    8:88.             Followers: 12
-           8888            `8:888.           Following: 8
-         .8888'             `888888.         Public Repos: 9
-        .8888:..  .::.  ...:'8888888:.       Public Gists: 0
-       .8888.'     :'     `'::`88:88888      Total Stars: 23
-      .8888        '         `.888:8888.     Bytes of Code: 31196
-     888:8         .           888:88888     Created At: 2023-04-11
-   .888:88        .:           888:88888:    Updated At: 2026-05-28
-   8888888.       ::           88:888888     Languages: Python, JavaScript, C
-   `.::.888.      ::          .88888888      Total Commits: 412
-  .::::::.888.    ::         :::`8888'.:.    Total Issues: 5
- ::::::::::.888   '         .::::::::::::    Total PRs: 17
- ::::::::::::.8    '      .:8::::::::::::.
-.::::::::::::::.        .:888:::::::::::::
-:::::::::::::::88:.__..:88888:::::::::::'
+             888888888888888888              Bio: Construindo soluções reais e criando
+             88' _`88'_  `88888                   problemas novos no processo.
+             88 88 88 88  88888                   Python, workflows com LLM e sidequests
+             88_88_::_88_:88888                   corporativas.
+             88:::,::,:::::8888              Location: None
+             88`:::::::::'`8888              Company: None
+            .88  `::::'    8:88.             Email: None
+           8888            `8:888.           Hireable: No
+         .8888'             `888888.         Followers: 1
+        .8888:..  .::.  ...:'8888888:.       Following: 1
+       .8888.'     :'     `'::`88:88888      Public Repos: 8
+      .8888        '         `.888:8888.     Public Gists: 0
+     888:8         .           888:88888     Total Stars: 0
+   .888:88        .:           888:88888:    Bytes of Code: 299509
+   8888888.       ::           88:888888     Created At: 2022-02-23
+   `.::.888.      ::          .88888888      Updated At: 2026-05-28
+  .::::::.888.    ::         :::`8888'.:.    Languages: Jupyter Notebook, Python, Java,
+ ::::::::::.888   '         .::::::::::::               JavaScript
+ ::::::::::::.8    '      .:8::::::::::::.   Total Commits: 163
+.::::::::::::::.        .:888:::::::::::::   Total Issues: 0
+:::::::::::::::88:.__..:88888:::::::::::'    Total PRs: 4
  `'.:::::::::::88888888888.88:::::::::'
        `':::_:' -- '' -'-' `':_::::'`
 ```
