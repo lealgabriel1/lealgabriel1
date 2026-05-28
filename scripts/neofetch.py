@@ -59,7 +59,7 @@ ENABLED = [
 # Descomente e preencha para exibir um valor customizado (ex.: uma bio diferente
 # da do seu perfil). Os campos numericos continuam atualizando sozinhos.
 OVERRIDES = {
-    "bio": "Construindo soluções reais e criando problemas novos no processo.\nPipelines com LLMs e sidequests corporativas.",
+    "bio": "Construindo soluções reais e criando problemas novos no processo. Pipelines com LLMs e sidequests corporativas.",
     "location": "Sao Paulo, BR",
     "company": "MEDTH",
     "email": "glealleone@gmail.com",
