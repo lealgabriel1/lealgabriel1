@@ -1,43 +1,14 @@
 <!--
   =============================================================================
-  COMO EDITAR A ARTE:
-  Escreva/cole seu desenho ASCII entre "ART:START" e "ART:END" abaixo.
-  Dicas:
-    - mantenha cada linha com no maximo ~36 colunas de largura (fica ao lado
-      dos stats sem estourar o limite de ~88 colunas do README);
-    - NAO use a sequencia "SETA" dentro da arte (fecharia este comentario);
-    - o GitHub ignora este comentario, entao a arte nao aparece duplicada.
-  O workflow le esta arte e atualiza SO os numeros no bloco visivel abaixo.
+  Este README e um "neofetch" do perfil: arte ASCII em cima, stats embaixo.
+  A arte e escolhida automaticamente da pasta ascii/, uma por dia (rotaciona
+  pela data UTC). Para adicionar ou trocar desenhos, e so colocar arquivos .txt
+  em ascii/. Qualquer caractere ('#', '<', '>', etc.) e seguro, pois a arte vai
+  dentro de um bloco de codigo.
+  O bloco visivel abaixo (entre NEOFETCH:START e NEOFETCH:END) e gerado pelo
+  workflow .github/workflows/neofetch.yml. Nao edite a mao: sera sobrescrito.
   =============================================================================
 -->
-<!--ART:START
-                .88888888:.
-               88888888.88888.
-             .8888888888888888.
-             888888888888888888
-             88' _`88'_  `88888
-             88 88 88 88  88888
-             88_88_::_88_:88888
-             88:::,::,:::::8888
-             88`:::::::::'`8888
-            .88  `::::'    8:88.
-           8888            `8:888.
-         .8888'             `888888.
-        .8888:..  .::.  ...:'8888888:.
-       .8888.'     :'     `'::`88:88888
-      .8888        '         `.888:8888.
-     888:8         .           888:88888
-   .888:88        .:           888:88888:
-   8888888.       ::           88:888888
-   `.::.888.      ::          .88888888
-  .::::::.888.    ::         :::`8888'.:.
- ::::::::::.888   '         .::::::::::::
- ::::::::::::.8    '      .:8::::::::::::.
-.::::::::::::::.        .:888:::::::::::::
-:::::::::::::::88:.__..:88888:::::::::::'
- `'.:::::::::::88888888888.88:::::::::'
-       `':::_:' -- '' -'-' `':_::::'` 
-ART:END-->
 
 <!--NEOFETCH:START-->
 ```text

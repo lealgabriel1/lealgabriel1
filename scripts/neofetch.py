@@ -2,13 +2,20 @@
 """Atualiza o bloco "neofetch" do README com stats do GitHub.
 
 Como funciona:
-  1. Le a arte ASCII de dentro do comentario <!--ART:START ... ART:END--> no README.
+  1. Escolhe uma arte ASCII da pasta ascii/ (rotaciona: uma por dia, pela data UTC).
   2. Busca os numeros na API do GitHub (GraphQL).
-  3. Recompoe o bloco visivel (arte a esquerda + stats a direita) entre os
+  3. Recompoe o bloco visivel (arte em cima + stats embaixo) entre os
      marcadores <!--NEOFETCH:START--> e <!--NEOFETCH:END-->.
 
-O script NUNCA gera nem altera a arte: ele so le, alinha e atualiza os numeros.
-Sem dependencias externas (so a stdlib). Sem token => roda em modo demo offline.
+O script NUNCA gera nem altera a arte: ele so le os arquivos .txt de ascii/,
+escolhe um e monta o bloco com os numeros. Sem dependencias externas (so a
+stdlib). Sem token => roda em modo demo offline.
+
+Variaveis de ambiente uteis:
+  GH_USER       login do GitHub (default: lealgabriel1)
+  GH_TOKEN      token da API; sem ele, usa dados de demonstracao
+  NEOFETCH_DEMO =1 forca o modo demo
+  NEOFETCH_ART  nome de um arquivo em ascii/ (ex.: dragon.txt) para fixar a arte
 """
 import os
 import re
@@ -19,6 +26,7 @@ import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 README = os.path.join(ROOT, "README.md")
+ASCII_DIR = os.path.join(ROOT, "ascii")
 
 USER = os.environ.get("GH_USER", "lealgabriel1")
 TOKEN = os.environ.get("GH_TOKEN", "")
@@ -79,9 +87,7 @@ LABELS = {
     "total_prs": "Total PRs",
 }
 
-GAP = 3            # espacos entre a arte e os stats
-TARGET_WIDTH = 88  # largura total alvo do bloco (evita scroll horizontal no desktop)
-MIN_STATS = 24     # largura minima da coluna de stats (piso de legibilidade)
+TARGET_WIDTH = 88  # largura usada para quebrar linhas longas de stats (ex.: bio)
 
 GQL_USER = """
 query($login: String!) {
@@ -228,19 +234,39 @@ def stat_lines(data, wrap):
 
 
 def compose(art_lines, stats):
-    art_width = max((len(l) for l in art_lines), default=0)
-    rows = max(len(art_lines), len(stats))
-    out = []
-    for i in range(rows):
-        art = art_lines[i] if i < len(art_lines) else ""
-        stat = stats[i] if i < len(stats) else ""
-        out.append((art.ljust(art_width) + " " * GAP + stat).rstrip())
-    return "\n".join(out)
+    """Empilha: arte em cima, uma linha em branco, e os stats embaixo."""
+    art = [line.rstrip() for line in art_lines]
+    body = (art + [""] + list(stats)) if art else list(stats)
+    return "\n".join(line.rstrip() for line in body)
 
 
-def extract_art(readme):
-    match = re.search(r"<!--ART:START\n(.*?)\nART:END-->", readme, re.DOTALL)
-    return match.group(1).split("\n") if match else []
+def list_arts():
+    if not os.path.isdir(ASCII_DIR):
+        return []
+    return sorted(f for f in os.listdir(ASCII_DIR) if f.lower().endswith(".txt"))
+
+
+def read_art(path):
+    with open(path, encoding="utf-8") as f:
+        text = f.read().replace("\r\n", "\n").strip("\n")
+    return text.split("\n") if text else []
+
+
+def pick_art():
+    """Arte do dia: rotaciona pela data UTC. Determinístico, entao pushes no
+    mesmo dia nao trocam o desenho (so atualizam os numeros). Defina NEOFETCH_ART
+    para fixar um arquivo especifico."""
+    forced = os.environ.get("NEOFETCH_ART")
+    if forced:
+        path = os.path.join(ASCII_DIR, forced)
+        if os.path.isfile(path):
+            return read_art(path)
+    arts = list_arts()
+    if not arts:
+        return []
+    today = datetime.datetime.now(datetime.timezone.utc).date()
+    index = today.toordinal() % len(arts)
+    return read_art(os.path.join(ASCII_DIR, arts[index]))
 
 
 def splice(readme, block):
@@ -257,7 +283,7 @@ def main():
     with open(README, encoding="utf-8") as f:
         readme = f.read()
 
-    art = extract_art(readme)
+    art = pick_art()
     if DEMO or not TOKEN:
         if not TOKEN and not DEMO:
             print("Aviso: GH_TOKEN ausente -> usando dados de demonstracao.")
@@ -267,9 +293,7 @@ def main():
 
     data.update({k: v for k, v in OVERRIDES.items() if v})
 
-    art_width = max((len(l) for l in art), default=0)
-    wrap = max(TARGET_WIDTH - art_width - GAP, MIN_STATS)
-    block = compose(art, stat_lines(data, wrap))
+    block = compose(art, stat_lines(data, TARGET_WIDTH))
     updated = splice(readme, block)
 
     with open(README, "w", encoding="utf-8", newline="\n") as f:
