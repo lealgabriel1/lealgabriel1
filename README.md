@@ -12,52 +12,65 @@
 
 <!--NEOFETCH:START-->
 ```text
-                                                                  _______
-                                                                LLLLLLLLLLL
-                                                            __LLLLLLLLLLLLLL
-                                                           LLLLLLLLLLLLLLLLL
-                                                         _LLLLLLLLLLLLLLLLLL
-                                                        LLLLLLLLLLLLLLLLLLLL
-                                                      _LLLLLLLLLLLLLLLLLLLLL
-                                                      LLLLLLLLLLLLLLLLLLLLLL
-                                              L     _LLLLLLLLLLLLLLLLLLLLLLL
-                                             LL     LLLLLL~~~LLLLLLLLLLLLLL
-                                            _L    _LLLLL      LLLLLLLLLLLLL
-                                            L~    LLL~        LLLLLLLLLLLLL
-                                           LL   _LLL        _LL   LLLLLLLL
-                                          LL    LL~         ~~     ~LLLLLL
-                                          L   _LLL_LLLL___         _LLLLLL
-                                         LL  LLLLLLLLLLLLLL      LLLLLLLL
-                                         L  LLLLLLLLLLLLLLL        LLLLLL
-                                        LL LLLLLLLLLLLLLLLL        LLLLL~
-                  LLLLLLLL_______       L _LLLLLLLLLLLLLLLL     LLLLLLLL
-                         ~~~~~~~LLLLLLLLLLLLLLLLLLLLLLLLL~       LLLLLL
-                       ______________LLL  LLLLLLLLLLLLLL ______LLLLLLLLL_
-                   LLLLLLLLLLLLLLLLLLLL  LLLLLLLL~~LLLLLLL~~~~~~   ~LLLLLL
-             ___LLLLLLLLLL __LLLLLLLLLLLLL LLLLLLLLLLLLL____       _LLLLLL_
-          LLLLLLLLLLL~~   LLLLLLLLLLLLLLL   LLLLLLLLLLLLLLLLLL     ~~~LLLLL
-      __LLLLLLLLLLL     _LLLLLLLLLLLLLLLLL_  LLLLLLLLLLLLLLLLLL_       LLLLL
-     LLLLLLLLLLL~       LLLLLLLLLLLLLLLLLLL   ~L ~~LLLLLLLLLLLLL      LLLLLL
-   _LLLLLLLLLLLL       LLLLLLLLLLLLLLLLLLLLL_  LL      LLLLLLLLL   LLLLLLLLL
-  LLLLLLLLLLLLL        LLLLLLLLLLLLL~LLLLLL~L   LL       ~~~~~       ~LLLLLL
- LLLLLLLLLLLLLLL__L    LLLLLLLLLLLL_LLLLLLL LL_  LL_            _     LLLLLL
-LLLLLLLLLLLLLLLLL~     ~LLLLLLLL~~LLLLLLLL   ~L  ~LLLL          ~L   LLLLLL~
-LLLLLLLLLLLLLLLL               _LLLLLLLLLL    LL  LLLLLLL___     LLLLLLLLLL
-LLLLLLLLLLLLLLLL              LL~LLLLLLLL~     LL  LLLLLLLLLLLL   LLLLLLL~
-LLLLLLLLLLLLLLLL_  __L       _L  LLLLLLLL      LLL_ LLLLLLLLLLLLLLLLLLLLL
- LLLLLLLLLLLLLLLLLLLL        L~  LLLLLLLL      LLLLLLL~LLLLLLLLLLLLLLLL~
-  LLLLLLLLLLLLLLLLLLLL___L_ LL   LLLLLLL       LLLL     LLLLLLLLLLLLLL
-   ~~LLLLLLLLLLLLLLLLLLLLLLLL     LLLLL~      LLLLL        ~~~~~~~~~
-           LLLLLLLLLLLLLLLLLL_ _   LLL       _LLLLL
-               ~~~~~~LLLLLLLLLL~             LLLLLL
-                         LLLLL              _LLLLLL
-                         LLLLL    L     L   LLLLLLL
-                          LLLLL__LL    _L__LLLLLLLL
-                          LLLLLLLLLL  LLLLLLLLLLLL
-                           LLLLLLLLLLLLLLLLLLLLLL
-                            ~LLLLLLLLLLLLLLLLL~~
-                               LLLLLLLLLLLLL
-                                 ~~~~~~~~~
+                                                       _
+                                                 __   / |
+                                                /  \ / ,|
+                                               |   _/ /||
+                                              _|  / ./ ||
+                                          _ _/_ \| /   ';   _. -
+                     .-.     ,    _      / /_/ '\||   //.-'
+                    //||    :    /_\     \_\\___.\\ _`'0
+                   || |'.  !    ///|       `,-----)`_)--'
+                   //  \|  '_  // //        `-----'"
+                  | \   \\/  0/' ,/
+                  _\_'._/ \  -/ //
+                 / .---.' /`/ -`/
+                 \ \   _/,_//\<'
+                  | \_/ / |!_//
+                   '--'[_/\__/
+
+         ,-.   -.
+        /  |  |  \
+       | /|!` | . !
+      / . || ! \ ||
+     . /  |! . | !|
+     | |  || _ ! !|
+     \ \__!!/ 0|' |
+     _>___ |._ !  /
+    ( !   '>   <_/
+     \ \_//.-. /\                                          .-.
+      7  /|  // /                                         (__.|
+      \_/ '-'(_/                                          (__.|       ,-'-.
+                                                          (_ _.\     /`--='\
+            .                                     .-.     | `._.\    \._ _.(
+         `.  .                                   ('-_!    |   \_/    |.-._ |
+           \ :                                   (`/ |    '.___/     !    \!
+            '!                                   | ._!               |    /
+            _'                                   ( .-|               \__.'
+           0  \                                  | ._|
+   _.------.  /.                                 / - !                   ,-'-.
+ .'   .----.\_.\\                                \_0/                   /`--='\
+(__  \_   ._.   \'-._                                                   \``'.-(
+   \   '-'/  \\  \-._)                                                  |    \|
+    '--^._'._/|\_/                                                      |    |!
+           '--'                                                         /    /
+                   ,                                           ,-'-.    \__.'
+                   :                                          [`--='\
+             -._   '                                          \``'.-(
+                 '._     _.--.                                | _  \/
+                  / 0  ,'.--.  \                             / / \_ |
+                __\_ ` /   _/  '.                            \/-\ \_/
+           _.-'_.---.\-'.__)_   |                            /-`\_/
+         .'  (_    _'_. \(_` \ <                             \_0/
+        (___   \_.`.' |\ `\\_/  !               __          .'/
+            \__-, (_  || \_'._ /  _       _ _"-` _)_.-. ' -'.'
+                \__ \_'|            ' -./0 `_.-') _/ ) )
+                   '.__/              .-'--^._-' /,-'_/
+                                   _.( '--'____-'. (`
+                                      `---'/!  __/  \
+                                          | \_/    _/
+                                           \      /
+                                            '.__.'
 
 lealgabriel1@github
 -------------------
@@ -72,11 +85,11 @@ Following: 1
 Public Repos: 8
 Public Gists: 0
 Total Stars: 0
-Bytes of Code: 301904
+Bytes of Code: 315618
 Created At: 2022-02-23
 Updated At: 2026-05-28
 Main Languages: Jupyter Notebook, Python, Java, JavaScript
-Total Commits: 170
+Total Commits: 173
 Total Issues: 0
 Total PRs: 4
 ```
