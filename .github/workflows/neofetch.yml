@@ -5,7 +5,7 @@ on:
     branches: [main]        # roda a cada push na main (inclusive quando voce edita a arte)
   workflow_dispatch:        # permite rodar manualmente pela aba Actions
   schedule:
-    - cron: "0 6 * * *"   # todo dia as 06:00 UTC (03:00 no horario de Brasilia)
+    - cron: "20 4 * * *"  # todo dia as 04:20 UTC (01:20 no horario de Brasilia); madrugada BRT = baixa congestao + termina antes de eu acordar
 
 permissions:
   contents: write
