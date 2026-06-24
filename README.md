@@ -12,75 +12,43 @@
 
 <!--NEOFETCH:START-->
 ```text
-                 db.
-                d88P
-                88P
-         8P    d88
-         8     88P                                               d88
-        d8b   d88                                               d8P
-        888   88P                                             d88P
-        8888888P                                  ..od888888888P
-        8888888     d8b                       d88888888888888P       d8b
-        8888888   d88P                     .d888888888888888888888b d88P
-       d88888888888"                     d88888888888888888888888888P"
-      d888888888888                    d888888888888P888888b
-      8888888888d88b                   888888888888P888888888b..db
-     d88888888d88888b                  Y888888888K   Y8b     "Y8888
-     88888888d8888888b                  Y8888888888b  Y8b      "YP
-    d8888888d888888888b              ... "Y8888888888b.YP  .d888888bo.
-   d8888888d8888888888P         .od888888888b88d88888888888888888888888b.
-   8888888d88888888888     .d88888888888888888888888888888888888888888888b.
-   888888d88888888888P  .d8888888888888888888888888888888888888888888888888b
-   888888888888888888 d88888888888888888888888888888888888888888888888888888b
-  d88888d88888888888d88888888888888888888888888888888888888888888888888888888
-  88888d88888888888d88888888888888888888888888888888888888888888888888888888P
-  8888d88888888888d888888888888888888888888888888888888888888888888888888888
-  888888888888888d888888888888888888888888888888888888888888888888888888888P
-  88888888888888d888888888888888888888888888888888888888888888888888888888P
-  8888888888888d888888888888888888888888888888888888888888888888888888888P
-  Y888888888888888888888888888888888888888888888888888888888888888888888P
-   Y888Pd8888d888888888888888888888888888888888888888888888888888888888"
-       d888d8888888888888888888888888888888888888888888888888888888888P
-      .88d8888888888888888888888888888888888888888888888888888888888P
-      :d888888888888888888888888888888888888888888888888888888P  ""
-      :888888888888888888888888888888888888888888888888888888P
-      :888888888888888888888888888888888888888888888888P8888P
-       8b88888888888888888888888888888888888888888888P888888
-       888b88888888888888888888888888888888888888888Pd88888P
-       "88888b8888888888888888888888888888888888888Pd888888
-        Y88888888b8888888888888888888888888888888P d888888P
-         8888888888b888888888888888888888888888P"  8888888
-         "88888888888Y88888888888888888888888P     8888888b
-          Y888888888888Y8888888888888888888P       Y8888888      d88b
-           "Y8888888888b "Y888888888888P"           Y888888b  d888P Y88
-             Y8888888888b     """"""                 Y8888888888P
-              Y8888888888b                            Y888888888b      .db
- d8b.          Y8888888888                             Y88888888888888888P
- 8888888888888888888888888b                             Y88888888888bo.
-d88888888888888888888888888                              Y888888888888888bo.
-Y88888888888888888888888888b                              "Y8888888888888888888b
- 888888888888888888888888888                                Y88888888b      "P8P
- Y888b "Y888888888888888888P                                   "Y88888b.
-  8888b   "Y88888888888888P                                         "Y88b
-  Y8888.     "Y8888888888P                                            "Y8b.
-   88888b         """""                                                 "Y88
-   Y88888b
-    Y888888bo.  .
-     8888888888888
-     Y8888888b8b "
-      Y88888888b88b
-       Y888888b88b888b
-        Y888888bY88b8P
-         "888888b Y88bo.
-          Y888888b  "Y8888b
-           Y888888b    "YP
-            8888888b
-            888P Y888b
-            Y88   "Y88b
-             Y8     Y88
-              8b     Y8b
-              88P     "8b
-              "8       Y8P
+                            ....+((zzz((-....
+                      ..+6llllllllllllllllllllZz+.
+                  .-OllllllltllllllltllllllllllllllOi.
+               .JOllllllllllllltllllltltlltlllllllllllOI.
+            ..6lllllltlltlOt?=!~         !?7<OOllllllllllwi.
+          .(OlllllllllOv7`                      ?1ylltlllllO6.
+         .OlllllllltO=                             ?COlllllllOn.
+       .Sllllllltlln.                                 7ylllllllv+
+      .Olllltlllllllvi                                  ?slltllltn
+     Jllltlllltlltllllvi                                  TOllllllG.
+    Jlllllltu= TOlllllllZ<            .                  c .sltllllw.
+   .lltllltv`   .4OlllllllZ<          (                  b  .kllltllG
+  .OlllltOr       .1OlltllllZ........ M                  M    SllllllL
+  Dllllltr          .1Olltllll1TMMMMM.Mx.      ..........M    .ylltlld.
+ .llltllJ             .2llllllllidMMMN.YMMMMMMMMMMMMMMMM"'     .OlltllL
+ Klllllu\           .JMMmvltlllllliTMMMN&x MMMMMMMMMM           Sllllld
+.6ltllld           .MMMMMMmvtlltlllliTMMM] HMMMMMMMM]           .lltllt]
+.llltll]          .MMMMMMMMMmzlllllllliTM] .MMMMMMMM`           .llllll]
+.llllll]      x  .MMMMMMMMMMMMm1lltlllllzb  (MMMMMM]            .lltlll]
+.ltlltl]      b  MMMMMMMMMMMMMMMm1llllllllI. 4MMMM#             .llltll]
+.ylllllG      M .MMMMMMMMMMMMMMMMMm1lltlllll6.TMMD              .lllllt]
+ Kllltld      M  MMMMMMMMMMMMMMMMMMMg1llltlllt6.                Dtlllld
+ jllllll]     (MgMMMMMMMMMMMMMMMMMMMMMg1llllllll6.             .llltll2
+ .kltlltd.      .!"MMMMMMMMMMF????????TMe1lltllllt6.          .Olllltd^
+  .lllllld.         "MMMMMMMMM         MM]?ylltllllO6.       .Iltllllr
+   4lltlllw.           .!""MMM         MM]  7ylltllllOn.    .OlllltlJ
+    Slllllld.     .MMa.    MMM         MM]    7slllllllOn..Ollllllld`
+     4ltllllOn   (MMMMM    ?MM         TM]      7yltlllllllllltlltv`
+      4tlltlllZ< .WMM#^      ?           `        7ylllllllltllltv
+       ?slllllllZ<.                                 4lllltlllllu=
+         TOlltllllOI.                             .vlltlllltlOv!
+          .1OllllllllOI..                      .JOllllltllltv'
+             TylltlltllllOz<...          ...zIlllllltllllOv'
+               ?1OlllllllllllllltOOOOOtlltllllllllllllty=`
+                  ?1ylltlllllllllllllllllltlllltltlOv7`
+                      ?7lOlltlllllllltlllllltlOy?7`
+                            `?7<<llllzz<+7=?~
 
 lealgabriel1@github
 -------------------
@@ -101,6 +69,6 @@ Updated At: 2026-06-17
 Main Languages: TypeScript, Jupyter Notebook, Python, PLpgSQL
 Total Commits: 405
 Total Issues: 1
-Total PRs: 45
+Total PRs: 46
 ```
 <!--NEOFETCH:END-->
