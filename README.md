@@ -28,7 +28,7 @@ Location: Sao Paulo, BR                                  :888.o8888.  "88."89".
 Company: MEDTH                                          . 89  888888    "88":.
 Bytes of Code: 524813                                   :.     '8888o
 Total Commits: 406                                       .       "8888..
-Total PRs: 47                                                      888888o.
+Total PRs: 48                                                      888888o.
 Created At: 2022-02-23                                              "888889,
 Email: glealleone@gmail.com                                  . : :.:::::::.: :.
 ```
