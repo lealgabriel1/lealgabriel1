@@ -26,9 +26,9 @@ a888P          ..c6888969""..,"o888888888o.?8888888888"".ooo8888oo.
                          lealgabriel1@github            .:o888.o8o.  "866o9888o
 Location: Sao Paulo, BR                                  :888.o8888.  "88."89".
 Company: MEDTH                                          . 89  888888    "88":.
-Bytes of Code: 547400                                   :.     '8888o
-Total Commits: 842                                       .       "8888..
-Total PRs: 87                                                      888888o.
+Bytes of Code: 334572                                   :.     '8888o
+Total Commits: 762                                       .       "8888..
+Total PRs: 100                                                     888888o.
 Created At: 2022-02-23                                              "888889,
 Email: glealleone@gmail.com                                  . : :.:::::::.: :.
 ```
